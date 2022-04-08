@@ -45,6 +45,54 @@
       $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
       $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
     </script>
+    <script>
+      window.onload = function () {
+      
+        var chart = new CanvasJS.Chart("chartContainer", {
+      	animationEnabled: true,
+      	theme: "dark2",
+      	title:{
+    		text: "年度總積分"
+    	},
+      	toolTip:{
+    		enabled: false,
+    		shared:false
+    	},  
+      	data: [{
+    		type: "line",
+    		showInLegend: true,
+    		name: "得分",
+	    	markerType: "square",
+	    	color: "#F08080",
+	    	dataPoints: [
+					{ x: 10, y: 23, label:"2015" },
+					{ x: 20, y: 39, label:"2016" },
+					{ x: 30, y: 34, label:"2017" },
+					{ x: 40, y: 28, label:"2018" },
+					{ x: 50, y: 35, label:"2019" },
+					{ x: 60, y: 40, label:"2020" },
+					{ x: 70, y: 48, label:"2021" },
+	    	]
+	    },
+	    {
+		    type: "line",
+	    	showInLegend: true,
+		    name: "入球",
+		    lineDashType: "dash",
+		    dataPoints: [
+					{ x: 10, y: 13},
+					{ x: 20, y: 20},
+					{ x: 30, y: 18},
+					{ x: 40, y: 15},
+					{ x: 50, y: 19},
+					{ x: 60, y: 22},
+					{ x: 70, y: 25},
+		    ]
+	    }]
+      });
+        chart.render();
+      }
+    </script>
   </head>
   <body>
     <div id="base" class="">
@@ -880,5 +928,7 @@
       </div>
     </div>
     <script src="resources/scripts/axure/ios.js"></script>
+    <div id="chartContainer"></div>
+    <script src="files/page_a8/canvasjs.min.js"></script>
   </body>
 </html>
