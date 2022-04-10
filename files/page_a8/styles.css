@@ -16,29 +16,39 @@
   position:absolute;
   z-index:0;
 }
-#chartContainer_div {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:524px;
-  height:389px;
-  background:inherit;
-  background-color:rgba(242, 242, 242, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
-}
-#chartContainer {
-  border-width:0px;
+.chartContainer {
   position:absolute;
   left:698px;
   top:131px;
   width:524px;
   height:389px;
-  display:flex;
+}
+@media(max-width:1380px){
+  .chartContainer {
+  position:absolute;
+  left:12px;
+  top:380px;
+  width:368px;
+  height:272px;
+  }
+}
+.gauge {
+  border-width:0px;
+  position:absolute;
+  left:150px;
+  top:326px;
+  width: 526px;
+  height: 274px;
+}
+@media (max-width: 1380px) {
+.gauge {
+  border-width:0px;
+  position:absolute;
+  left:12px;
+  top:184px;
+  width: 366px;
+  height: 191px;
+  }
 }
 #u0_div {
   border-width:0px;
@@ -3705,27 +3715,6 @@ body.a {  background-color:rgba(255, 255, 255, 1);
   margin-left:0;
   margin-right:0;
   text-align:left;
-}
-#chartContainer.a {
-  left:12px;
-  top:380px;
-  width:368px;
-  height:272px;
-}
-#chartContainer_div.a {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:368px;
-  height:272px;
-  background:inherit;
-  background-color:rgba(242, 242, 242, 0);
-  border:none;
-  border-radius:0px;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
-  box-shadow:none;
 }
 #u0.a {
   left:12px;

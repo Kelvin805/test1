@@ -40,6 +40,13 @@
     <script src="resources/scripts/axure/jquery.nicescroll.min.js"></script>
     <script src="data/document.js"></script>
     <script src="files/page_a8/data.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/locales/de_DE.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/geodata/germanyLow.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/fonts/notosans-sc.js"></script>
     <script type="text/javascript">
       $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
       $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
@@ -105,21 +112,21 @@
         </div>
       </div>
 
-      <!-- Score_bg (Rectangle) -->
+      <!-- Score_bg (Rectangle)
       <div id="u1" class="ax_default box_2" data-label="Score_bg">
         <div id="u1_div" class=""></div>
         <div id="u1_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
-      </div>
+      </div> -->
 
-      <!-- Score_G (Image) -->
+      <!-- Score_G (Image)
       <div id="u2" class="ax_default image" data-label="Score_G">
         <img id="u2_img" class="img " src="images/page_a8/score_g_u2.svg"/>
         <div id="u2_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
-      </div>
+      </div> -->
 
       <!-- Top Menu_M (Group) -->
       <div id="u3" class="ax_default ax_default_unplaced" data-label="Top Menu_M" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
@@ -678,7 +685,7 @@
           <p><span>AI模組嚴選最高分球隊 – 羅斯托夫 PFC索契</span></p>
         </div>
       </div>
-
+      <div id="gauge" class="gauge"></div>
       <!-- NAVIGATION BAR (Group) -->
       <div id="u69" class="ax_default" data-label="NAVIGATION BAR" data-left="1" data-top="0" data-width="1364" data-height="210">
 
@@ -928,7 +935,8 @@
       </div>
     </div>
     <script src="resources/scripts/axure/ios.js"></script>
-    <div id="chartContainer"></div>
+    <div id="chartContainer" class="chartContainer"></div>
     <script src="files/page_a8/canvasjs.min.js"></script>
+    <script src="files/page_a8/gauge.js"></script>
   </body>
 </html>
